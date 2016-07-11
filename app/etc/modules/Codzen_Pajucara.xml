@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Codzen_Pajucara>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Mage_Shipping />
+			</depends>
+			<version>1.0.0</version>
+		</Codzen_Pajucara>
+	</modules>
+</config>

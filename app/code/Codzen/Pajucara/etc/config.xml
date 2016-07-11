@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Codzen
+ * @package   Codzen_Pajucara
+ * @author    Rodrigo Donini
+ * @copyright 2016 Codzen (http://www.codzen.com.br)
+ */
+-->
+<config>
+    <modules>
+        <Codzen_Pajucara>
+            <version>0.0.1</version>
+        </Codzen_Pajucara>
+    </modules>
+
+    <global>
+		<helpers>
+			<codzen_pajucara>
+				<class>Codzen_Pajucara_Helper</class>
+			</codzen_pajucara>
+		</helpers>
+        <sales>
+            <shipping>
+                <carriers>
+                    <codzen_pajucara>
+                        <class>Codzen_Pajucara_Model_Carrier_Pajucara</class>
+                    </codzen_pajucara>
+                </carriers>
+            </shipping>
+        </sales>
+        <models>
+            <codzen_pajucara>
+                <class>Codzen_Pajucara_Model</class>
+            </codzen_pajucara>
+        </models>
+
+    </global>
+
+    <default>
+        <carriers>
+            <codzen_pajucara>
+                <!-- GENERAL -->
+                <active>1</active>
+                <model>Codzen_Pajucara_Model_Carrier_Pajucara</model>
+                <title>Pajuçara</title>
+                <debug>0</debug>
+                <showmethod>1</showmethod>
+                <!-- URLS -->
+                <url_ws_pajucara>http://sao.pajunet.com.br:8083/wsdl/IVPService</url_ws_pajucara>
+                <!-- MENSAGENS -->
+                <pajucaraerror>Houve um erro inesperado, por favor entre em contato. %s</pajucaraerror>
+                <url_ws_nao_encontrada>Url do webservice não informada.</url_ws_nao_encontrada>
+                <pajucara_erro_1>CNPJ inválido</pajucara_erro_1>
+                <pajucara_erro_2>CEP inválido</pajucara_erro_2>
+                <pajucara_erro_3>Peso inválido</pajucara_erro_3>
+                <pajucara_erro_4>Valor NF inválido</pajucara_erro_4>
+                <pajucara_erro_5>CEP origem fora da área de atendimento</pajucara_erro_5>
+                <pajucara_erro_6>CEP destino fora da área de atendimento</pajucara_erro_6>
+                <pajucara_erro_100>Erro interno</pajucara_erro_100>
+            </codzen_pajucara>
+        </carriers>
+    </default>
+</config>
