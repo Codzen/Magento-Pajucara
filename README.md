@@ -4,7 +4,7 @@
 
 Módulo de Entrega para transportadora Pajuçara. A estimativa de frete é feita através de Web Service fornecido pela Pajuçara. 
 
-Algums funcionalidades não foram construídas até o momento porque aguarda-se que a transportadora crie os métodos necessários nos seu Web Service.
+Algumas funcionalidades não foram construídas até o momento porque aguarda-se que a transportadora crie os métodos necessários nos seu Web Service.
 
 ### @TODO's
 - ~~Estimativa de valor de frete via WebService~~
@@ -19,6 +19,10 @@ Algums funcionalidades não foram construídas até o momento porque aguarda-se 
 ## Bugs?
 
 Utilize o próprio GitHub para reportar problemas.
+
+## Colaboração
+
+Sinta-se a vontade para fazer o fork deste repositório e contribuir com a evolução do módulo.
 
 ##Licença
 
